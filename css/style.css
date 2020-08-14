@@ -3,7 +3,7 @@ html{
 }
 
 body{
-  background-color: #ddd;
+  background-color: #737373;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -21,6 +21,13 @@ h2{
   line-height: 1.5;
 }
 
+
+/************  
+Your Code Here
+Add code to remove the styling for the 
+list items in an unordered lists.
+*************/
+
 nav li{
   display:inline;
   padding-right:20px;
@@ -33,9 +40,12 @@ nav a{
   text-decoration: none; 
 }
 
-nav a:hover{
-  text-decoration: underline;
-}
+ /************  
+  Your Code Here -  Write the selector AND rule 
+
+  Add an underline whenever the mouse hovers over a 
+  link in the nav. 
+  *************/ 
 
 .skip a{
   background: white;
@@ -45,37 +55,49 @@ nav a:hover{
   transition: top 1s ease-out;
   z-index: 1;
 
-  /*Your code here - position relative to the parent */
-  /*Your code here - place 40px higher */;
+  /************  
+  Your Code Here
+  By default this link should be positioned 40px higher
+  than the top of it's parent element.
+  *************/
 }
 
-/*Your code here*/
-/*Add the selector and rule to move the skip 
-link to the exact top of the page.*/
- 
+  /************  
+  Your Code Here -  Write the selector AND rule 
 
-/*Your code here*/
-/*Add the selector and code to put a 2px black 
-border around all elements in focus.*/
-  
+  The link in the skip class should be positioned at the 
+  top of it's parent when it is in focus. 
+  *************/ 
+
+
+  /************  
+  Your Code Here -  Write the selector AND rule 
+
+  Any element in focus should have a 2px black border 
+  on all four sides.
+  *************/  
+
+
+nav{
+  background-color: #ddd;
+  padding: 25px 0; 
+  text-align: left;
+}
 
 footer{
   background-color: black;
   color: white;
-  grid-column: 1 / -1;  /*Can you explain what this does?*/
-  grid-row: 7 / auto;   /*Can you rewrite it?*/
   padding-top: 30px;
   text-align: center;
 }
 
-nav{
-  background-color: #ddd;
-  padding: 20px 0; 
-  text-align: left;
 
-  /*Your code here*/
-  /*Span the top row*/
 
+
+.container{
+  /************  
+  Your Code Here
+  **************/
 }
 
 header{
@@ -86,9 +108,14 @@ header{
   color: white;
   height: 400px;                /* Parallax effect */
 
-  /* Your code here */
-  /* Set background-image to header.jpg in the images folder */
-  /* Span one row */
+  /************  
+  Your Code Here
+  Set background-image to header.jpg in the images folder 
+  **************/
+ 
+
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 1 / auto;   /*Can you rewrite it?*/
 }
 
 header p{
@@ -99,90 +126,103 @@ header p{
 }
 
 
-.container{
-  /*Your code here  */
-  /* See documentation for mobile view */
-
 }
 .about, .method, .clients, .contact{
-  /*Your code here */
-  /* See documentation for mobile view */
-
+  /************  
+  Your Code Here
+  **************/
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
-   /*Your code here */
-   /* See documentation for mobile view */
+  /************  
+  Your Code Here
+  **************/
 }
 
 .about, .about-image{
-  /*Your code here */
-  /* See documentation for mobile view */
-
+  /************  
+  Your Code Here
+  **************/
 }
 
 .method, .method-image{
-  /*Your code here */
-  /* See documentation for mobile view */
+  /************  
+  Your Code Here
+  **************/
 }
 
 
 .clients, .clients-image{
-  /*Your code here */
-  /* See documentation for mobile view */
+  /************  
+  Your Code Here
+  **************/
 }
 
 
 .contact, .contact-image{
-  /*Your code here */
-  /* See documentation for mobile view */
+  /************  
+  Your Code Here
+  **************/
 }
 
 .text-block{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
-  /*Your code here:*/
-  /*Align the content in the center */
 
+  /************  
+  Your Code Here
+  Align the content in the center
+  **************/
 }
-
 
 
 @media all and (min-width: 800px){
 
-  .container{
-  /*Your code here */
-  /* See documentation for desktop view */ 
+  nav{
+    padding: 30px 0px;
+    /************  
+    Your Code Here
+    **************/
   }
 
-  nav{
-    background-color: #ddd;
-    text-align: right;
-    padding: 35px 0px;
-    align-self: center;
+  .container{
+    /************  
+    Your Code Here
+    **************/
   }
 
   .about, .clients, .method-image, .contact-image{
-  /*Your code here */
-  /* See documentation for desktop view */ 
+    /************  
+    Your Code Here
+    **************/
   }
 
   .about-image, .clients-image, .method, .contact{
-    /*Your code here */
-    /* See documentation for desktop view */ 
-    }
-
-
-}  /*End the media query*/
+    /************  
+    Your Code Here
+    **************/
+  }
+}
 
 @media screen and (prefers-reduced-motion: reduce){
+
   html{
-      scroll-behavior: auto; /* Removes scroll animation */
+    /************  
+    Your Code Here
+    Remove the scrolling
+    *************/
   }
 
   .skip a{
-    -webkit-transition: none;
-    transition: none;
+    /************  
+    Your Code Here
+    Remove the animation
+    *************/
+  }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
   }
 }
