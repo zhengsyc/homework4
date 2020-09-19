@@ -205,24 +205,26 @@ header p{
   }
 }
 
+/* You do not need to modify the code below here.  It is included for accessibility to allow
+people who do not like animation to turn it off.
+ */
 @media screen and (prefers-reduced-motion: reduce){
-
   html{
-    /************  
-    Your Code Here
-    Remove the scrolling
-    *************/
+      scroll-behavior: auto; /* Removes scroll animation */
   }
 
   .skip a{
-    /************  
-    Your Code Here
-    Remove the animation
-    *************/
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: initial; /* sets to default setting */
+    transition: initial; /* sets to default setting */
+    z-index: 1;
   }
 
-  /*Turn off parallax*/
-  header{
-    background-attachment: initial;
+  .skip a:focus{
+    top:0;
   }
 }
