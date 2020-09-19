@@ -205,9 +205,11 @@ header p{
   }
 }
 
-/* You do not need to modify the code below here.  It is included for accessibility to allow
-people who do not like animation to turn it off.
- */
+/*You do not need to modify any code below this line.
+It is included for accessibility to turn off animations
+and movement for people who have modified their 
+preferences to reduce motion.*/
+
 @media screen and (prefers-reduced-motion: reduce){
   html{
       scroll-behavior: auto; /* Removes scroll animation */
