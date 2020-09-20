@@ -21,13 +21,6 @@ h2{
   line-height: 1.5;
 }
 
-
-/************  
-Your Code Here
-Add code to remove the styling for the 
-list items in an unordered lists.
-*************/
-
 nav li{
   display:inline;
   padding-right:20px;
@@ -40,12 +33,10 @@ nav a{
   text-decoration: none; 
 }
 
- /************  
-  Your Code Here -  Write the selector AND rule 
+/*Your Code Here*/
+/*Write selector/rule property to add an underline when
+links in the navigation are in the hover or focus state.*/
 
-  Add an underline whenever the mouse hovers over a 
-  link in the nav. 
-  *************/ 
 
 .skip a{
   background: white;
@@ -55,27 +46,14 @@ nav a{
   transition: top 1s ease-out;
   z-index: 1;
 
-  /************  
-  Your Code Here
-  By default this link should be positioned 40px higher
-  than the top of it's parent element.
-  *************/
+  /*Your code here*/
 }
 
-  /************  
-  Your Code Here -  Write the selector AND rule 
+/*Your Code Here*/
+/*Write selector/rule property to position the skip class element*/
 
-  The link in the skip class should be positioned at the 
-  top of it's parent when it is in focus. 
-  *************/ 
-
-
-  /************  
-  Your Code Here -  Write the selector AND rule 
-
-  Any element in focus should have a 2px black border 
-  on all four sides.
-  *************/  
+/*Your Code Here*/
+/*Write selector/rule property to style all elements when in focus*/
 
 
 nav{
@@ -95,9 +73,7 @@ footer{
 
 
 .container{
-  /************  
-  Your Code Here
-  **************/
+  /*Your Code Here*/
 }
 
 header{
@@ -108,10 +84,8 @@ header{
   color: white;
   height: 400px;                /* Parallax effect */
 
-  /************  
-  Your Code Here
-  Set background-image to header.jpg in the images folder 
-  **************/
+  /*Your Code Here*/
+  /*Set background-image to header.jpg */
  
 
   grid-column: 1 / -1;  /*Can you explain what this does?*/
@@ -125,83 +99,63 @@ header p{
   text-align: center;
 }
 
-
-}
 .about, .method, .clients, .contact{
-  /************  
-  Your Code Here
-  **************/
+  /*Your Code Here*/
+
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
-  /************  
-  Your Code Here
-  **************/
+  /*Your Code Here*/
+
 }
 
 .about, .about-image{
-  /************  
-  Your Code Here
-  **************/
+   /*Your Code Here*/
+
 }
 
 .method, .method-image{
-  /************  
-  Your Code Here
-  **************/
+   /*Your Code Here*/
+
 }
 
 
 .clients, .clients-image{
-  /************  
-  Your Code Here
-  **************/
+    /*Your Code Here*/
+
 }
 
 
 .contact, .contact-image{
-  /************  
-  Your Code Here
-  **************/
+    /*Your Code Here*/
+
 }
 
 .text-block{
-  background-color: rgba(255, 255, 255, .8);
+background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
+  /*Your code here:*/
 
-  /************  
-  Your Code Here
-  Align the content in the center
-  **************/
 }
 
 
 @media all and (min-width: 800px){
-
   nav{
     padding: 30px 0px;
-    /************  
-    Your Code Here
-    **************/
+    /*Your code here:*/
   }
 
   .container{
-    /************  
-    Your Code Here
-    **************/
+    /*Your code here:*/
   }
 
   .about, .clients, .method-image, .contact-image{
-    /************  
-    Your Code Here
-    **************/
+    /*Your code here:*/
   }
 
   .about-image, .clients-image, .method, .contact{
-    /************  
-    Your Code Here
-    **************/
+    /*Your code here:*/
   }
 }
 
@@ -228,5 +182,10 @@ preferences to reduce motion.*/
 
   .skip a:focus{
     top:0;
+  }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
   }
 }
